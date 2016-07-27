@@ -1,6 +1,6 @@
 <?php
 
-function getRanLv($cvset, $userID){
+	function getRanLv($cvset, $userID){
 		//Include stats.php for getSkill(), getDeckInfo()
 		include_once('stats.php');
 		
@@ -28,8 +28,8 @@ function getRanLv($cvset, $userID){
 			$mxLv = $cvsetMxLv;
 			$prob = 1 / $mxLv;
 		}
-
-
+	
+	
 		$tmin = 0;
 		$tmax = $prob*100;
 		$rn = mt_rand(0,25);
